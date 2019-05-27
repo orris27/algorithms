@@ -12,6 +12,7 @@
 + Adding the start position like `isMatch(string s, string p, int ss=0, int ps=0)` is not recommended.
 
 #### Algorithms
+![](../images/regular-expression-matching.svg)
 
 ```
 if p is empty
@@ -30,6 +31,7 @@ if len(p) >= 2 && p[1] == '*':
 else:
     return fisrt_match && isMatch(s[1:], p[1:])
 ```
+
 
 
 
