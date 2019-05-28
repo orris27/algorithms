@@ -32,6 +32,9 @@ else:
     return fisrt_match && isMatch(s[1:], p[1:])
 ```
 
+### Approach 2: Dynamic Programming
+
++ `dp[i][j]`: whether s[i:] matches p[j:] or not
 
 
 
