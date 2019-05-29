@@ -34,6 +34,25 @@ template<typename T> inline bool smax(T &a, const T &b)   { return a < b ? a = b
 
 typedef long long LL;
 
+/*
+if p is empty
+    return (s is empty)
+first_match = s[0] in {p[0], '.'}
+if s is empty:
+    first_match = false
+if len(p) >= 2 && p[1] == '*':
+    if isMatch(s, p[2:]) is true:
+        return true;
+    else: // => first_match && isMatch(s[1:], p)
+        if first_match:
+            return isMatch(s[1:], p)
+        else:
+            return false
+else:
+    return fisrt_match && isMatch(s[1:], p[1:])
+*/
+
+
 class Solution {
 public:
     bool isMatch(string s, string p)
