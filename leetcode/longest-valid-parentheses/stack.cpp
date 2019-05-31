@@ -34,35 +34,38 @@ template<typename T> inline bool smax(T &a, const T &b)   { return a < b ? a = b
 
 typedef long long LL;
 
+
+
 class Solution {
 public:
     int longestValidParentheses(string s) {
-        if (s.length() <= 1)
-            return 0;
-        int max_length = 0, top, right, curr;
-        
-        for (int i=0;i<s.length() - 1; ++i)
+        int max_length = 0, left;
+        stack<int> st;
+        st.push(-1);
+        for (int i =0;i< s.length(); ++i)
         {
-            top = 0;
-            curr = i;
-            right = i;
-            if (s[i] == ')')
-                continue;
-            do{
-                if (s[curr] == '(')
-                    ++top;
-                else
-                    --top;
-                curr += 1;
-                if (top == 0)
-                    right = curr;
-            }while(top >= 0 && curr < s.length());
-            max_length = max(max_length, right - i);
-        
+            if (s[i] == '(')
+            {
+                st.push(i);
+            }
+            else
+            {
+                st.pop();
+                if (st.empty() == true)
+                {
+                    st.push(i);
+                }
+                left = st.top(); // !!! pick the topmost element after empty check
+                max_length = max(max_length, i - left);
+            }
         }
         return max_length;
     }
 };
+
+
+
+
 
 int main()
 {
@@ -70,8 +73,6 @@ int main()
     string s;
     cin >> s;
     cout << so.longestValidParentheses(s) << endl;
-    
-
 }
 
 

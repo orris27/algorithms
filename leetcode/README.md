@@ -36,7 +36,6 @@ Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Regular Exp
 
 Memory Usage: **8.3 MB**, less than 94.97% of C++ online submissions for Regular Expression Matching.
 
-
 + `i` starts from s.length() to 0, while `j` starts from p.length() to 0
 + default: `dp[s.length()][p.length()] = true;`
 
@@ -52,7 +51,7 @@ Memory Usage: **9.2 MB**, less than 91.05% of C++ online submissions for Longest
 + Try moving to left first, and move to right afterwards
 
 
-### Approach 2: Naive top pointer
+### Approach 2: Brute Force
 Runtime: **628 ms**, faster than 5.10% of C++ online submissions for Longest Valid Parentheses.
 
 Memory Usage: **9 MB**, less than 97.53% of C++ online submissions for Longest Valid Parentheses.
@@ -71,9 +70,18 @@ Runtime: **4 ms**, faster than 99.28% of C++ online submissions for Longest Vali
 
 Memory Usage: **9.2 MB**, less than 90.71% of C++ online submissions for Longest Valid Parentheses.
 
-+ **Traverse string from the left towards the right and then traverse from the right towards the left.**
++ **Traverse string from the left towards the right and then traverse from the right towards the left.**: if traverse only once, `(()` is a problem.
 
 + Use `top` or `left`, `right` which is used by LeetCode solution to capture the numbers of parentheses
 
 + If the `top` is less than 0, then we should reset `top` to 0 and pointer.
 
+### Approach 4: Stack
+Runtime: **8 ms**, faster than 90.98% of C++ online submissions for Longest Valid Parentheses.
+
+Memory Usage: **9.5 MB**, less than 73.95% of C++ online submissions for Longest Valid Parentheses.
+
++ Push & Pop corresponds to '(' and ')' respectly
++ To calculate the length of valid parentheses, their indices are required to be store in the stack
++ Push -1 at the begining
++ If ')' is encountered, pop + (if empty push) + subtract
