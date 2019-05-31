@@ -85,3 +85,11 @@ Memory Usage: **9.5 MB**, less than 73.95% of C++ online submissions for Longest
 + To calculate the length of valid parentheses, their indices are required to be store in the stack
 + Push -1 at the begining
 + If ')' is encountered, pop + (if empty push) + subtract
+
+### Approach 5: Dynamic Programming
+Runtime: **8 ms**, faster than 90.98% of C++ online submissions for Longest Valid Parentheses.
+
+Memory Usage: **9.3 MB**, less than 89.47% of C++ online submissions for Longest Valid Parentheses.
+
++ i-th element of `dp` represents the length of longest valid parentheses ending at s[i]
++ `dp[i]` depends on `dp[i - 1]`, `dp[i - 2]` and `dp[i - dp[i-2] - 2]`.
