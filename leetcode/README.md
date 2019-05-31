@@ -66,6 +66,8 @@ Memory Usage: **9 MB**, less than 97.53% of C++ online submissions for Longest V
 
 
 ### Approach 3: Without extra space (top.cpp)
+Time Complexity: O(N), Space Complexity: O(1)
+
 Runtime: **4 ms**, faster than 99.28% of C++ online submissions for Longest Valid Parentheses.
 
 Memory Usage: **9.2 MB**, less than 90.71% of C++ online submissions for Longest Valid Parentheses.
@@ -77,6 +79,8 @@ Memory Usage: **9.2 MB**, less than 90.71% of C++ online submissions for Longest
 + If the `top` is less than 0, then we should reset `top` to 0 and pointer.
 
 ### Approach 4: Stack
+Time Complexity: O(N), Space Complexity: O(N)
+
 Runtime: **8 ms**, faster than 90.98% of C++ online submissions for Longest Valid Parentheses.
 
 Memory Usage: **9.5 MB**, less than 73.95% of C++ online submissions for Longest Valid Parentheses.
@@ -87,6 +91,8 @@ Memory Usage: **9.5 MB**, less than 73.95% of C++ online submissions for Longest
 + If ')' is encountered, pop + (if empty push) + subtract
 
 ### Approach 5: Dynamic Programming
+Time Complexity: O(N), Space Complexity: O(N)
+
 Runtime: **8 ms**, faster than 90.98% of C++ online submissions for Longest Valid Parentheses.
 
 Memory Usage: **9.3 MB**, less than 89.47% of C++ online submissions for Longest Valid Parentheses.
