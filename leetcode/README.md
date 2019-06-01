@@ -1,3 +1,24 @@
+## 01. Two Sum
+### Approach 1: Brute Force
+Time Complexity: O(N^2), Space Complexity: O(1)
+
+Runtime: **540 ms**, faster than 5.14% of C++ online submissions for Two Sum.
+
+Memory Usage: **9.4 MB**, less than 73.20% of C++ online submissions for Two Sum.
+
++ Check all the pairs
+
+### Approach 2: One-pass Hash Table
+Time Complexity: O(N), Space Complexity: O(N)
+
+Runtime: **4 ms**, faster than 99.94% of C++ online submissions for Two Sum.
+
+Memory Usage: **10.3 MB**, less than 27.80% of C++ online submissions for Two Sum.
+
++ For a given number, look up its complement's index using hash table
+
+
+
 ## Longest Palindromic Substring
 
 ### Approach 1: Expand from the center to the both sides
