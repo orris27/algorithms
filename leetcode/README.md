@@ -17,9 +17,23 @@ Memory Usage: **10.3 MB**, less than 27.80% of C++ online submissions for Two Su
 
 + For a given number, look up its complement's index using hash table
 
+## 04. Median of Two Sorted Arrays
+### Approach 1: Recursive Approach
+Time Complexity: O(log(m+n)), Space Complexity: O(1)
+
+Runtime: **20 ms**, faster than 92.31% of C++ online submissions for Median of Two Sorted Arrays.
+
+Memory Usage: **9.8 MB**, less than 67.90% of C++ online submissions for Median of Two Sorted Arrays.
+
++ Cut two arrays into 2 parts.
++ 1. the length of left parts = the length of right parts
++ 2. the maximum element in left parts <= the minimum element in right parts
++ binary search
++ See details [here](https://leetcode.com/articles/median-of-two-sorted-arrays/)
 
 
-## Longest Palindromic Substring
+
+## 05. Longest Palindromic Substring
 
 ### Approach 1: Expand from the center to the both sides
 Runtime: **24 ms**, faster than 70.13% of C++ online submissions for Longest Palindromic Substring.
@@ -29,7 +43,7 @@ Memory Usage: **12.4 MB**, less than 50.17% of C++ online submissions for Longes
 + Check whether it is a palindrome while expanding from the center to both sides
 + divide into odd and even cases
 
-## Regular Expression Matching
+## 10. Regular Expression Matching
 
 ### Approach 1: Recursion
 Runtime: **212 ms**, faster than 21.85% of C++ online submissions for Regular Expression Matching.
@@ -61,7 +75,7 @@ Memory Usage: **8.3 MB**, less than 94.97% of C++ online submissions for Regular
 + default: `dp[s.length()][p.length()] = true;`
 
 
-## Longest Valid Parentheses
+## 32. Longest Valid Parentheses
 ### Approach 1: Expand from the center to both sides
 Runtime: **140 ms**, faster than 7.43% of C++ online submissions for Longest Valid Parentheses.
 
