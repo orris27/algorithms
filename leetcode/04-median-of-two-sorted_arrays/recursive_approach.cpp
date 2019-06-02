@@ -40,7 +40,7 @@ public:
         int i, j;
         // make sure nums1.size() < nums2.size()
         vector<int> tmp;
-        if (nums1.size() > nums2.size())
+        if (nums1.size() > nums2.size()) // time complexity of size() is O(1)
         {
             tmp = nums1;
             nums1 = nums2;
