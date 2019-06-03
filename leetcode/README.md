@@ -17,6 +17,30 @@ Memory Usage: **10.3 MB**, less than 27.80% of C++ online submissions for Two Su
 
 + For a given number, look up its complement's index using hash table
 
+
+
+## 03. Longest Substring Without Repeating Characters
+### Approach 1: Sliding Window
+
+Runtime: **24 ms**, faster than 60.85% of C++ online submissions for Longest Substring Without Repeating Characters.
+
+Memory Usage: **12.6 MB**, less than 63.06% of C++ online submissions for Longest Substring Without Repeating Characters.
+
++ Mark the head and tail of the longest substring with two points. Since the longest substing without repeating characters is also a substring internally, if the tail pointer moves to the right and encounters a character that has already appears in the marked substring, the pointer of head only needs to move to the right to meet the condition.
+
++ C++ set
+
+### Approach 2: Sliding Window Optimized
+Time Complexity: O(N), Space Complexity: HashMap O(min(m, n)), Table O(m), m is the size of the charset
+
+Runtime: **20 ms**, faster than 77.60% of C++ online submissions for Longest Substring Without Repeating Characters.
+
+Memory Usage: **10.8 MB**, less than 75.30% of C++ online submissions for Longest Substring Without Repeating Characters.
+
+
++ Build a hashmap to store the mapping of content to subscrtips.
++ The `max` function is used to filter out elements with subscripts less than l
+
 ## 04. Median of Two Sorted Arrays
 ### Approach 1: Recursive Approach
 Time Complexity: O(log(m+n)), Space Complexity: O(1)
