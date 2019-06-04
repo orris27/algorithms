@@ -99,6 +99,23 @@ Memory Usage: **8.3 MB**, less than 94.97% of C++ online submissions for Regular
 + default: `dp[s.length()][p.length()] = true;`
 
 
+
+## 11. Container With Most Water
+### Approach 1: Brute Force
+### Approach 2: Two Pointer Approach
+Time Complexity: O(N), Space Complexity: O(1)
+
+Runtime: **16 ms**, faster than 97.98% of C++ online submissions for Container With Most Water.
+
+Memory Usage: **9.9 MB**, less than 55.66% of C++ online submissions for Container With Most Water.
+
++ Move two pointers inward from both sides. If a specfic move is unlikely to have better results in the future, the pointer will not move.
+
+
+
+
+
+
 ## 32. Longest Valid Parentheses
 ### Approach 1: Expand from the center to both sides
 Runtime: **140 ms**, faster than 7.43% of C++ online submissions for Longest Valid Parentheses.
