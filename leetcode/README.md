@@ -113,6 +113,19 @@ Memory Usage: **9.9 MB**, less than 55.66% of C++ online submissions for Contain
 
 
 
+## 22. Generate Parantheses
+### Approach 1: Brute Force
+Time: O(N * 2^(2N)) Space: O(N * 2^(2N))
+
++ Generate all sequences and check whether a sequence is valid
+
+### Approach 2: Backtracking
+Runtime: **8 ms**, faster than 85.74% of C++ online submissions for Generate Parentheses.
+
+Memory Usage: **17.5 MB**, less than 25.55% of C++ online submissions for Generate Parentheses.
+
++ Keep track of the number of opening and closing brackets we have placed so far, and add brackets only when we know it will remain a valid sequence
+
 
 
 
