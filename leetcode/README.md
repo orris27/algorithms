@@ -120,12 +120,23 @@ Time: O(N * 2^(2N)) Space: O(N * 2^(2N))
 + Generate all sequences and check whether a sequence is valid
 
 ### Approach 2: Backtracking
+Time: O((4^N) / sqrt(N)) Space: O((4^N) / sqrt(N))
+
 Runtime: **8 ms**, faster than 85.74% of C++ online submissions for Generate Parentheses.
 
 Memory Usage: **17.5 MB**, less than 25.55% of C++ online submissions for Generate Parentheses.
 
 + Keep track of the number of opening and closing brackets we have placed so far, and add brackets only when we know it will remain a valid sequence
 
+
+### Approach 3: Closure Number
+Time: O((4^N) / sqrt(N)) Space: O((4^N) / sqrt(N))
+
+Runtime: **8 ms**, faster than 84.70% of C++ online submissions for Generate Parentheses.
+
+Memory Usage: **14.6 MB**, less than 72.60% of C++ online submissions for Generate Parentheses.
+
++ For each closure number `c`, the starting and ending brackets must be at index `c` and `2 * c + 1`. The `2*c` elements between must also be a valid sequence, plus the rest of the elements must be a valid sequence.
 
 
 
