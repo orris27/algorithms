@@ -139,6 +139,24 @@ Memory Usage: **14.6 MB**, less than 72.60% of C++ online submissions for Genera
 + For each closure number `c`, the starting and ending brackets must be at index `c` and `2 * c + 1`. The `2*c` elements between must also be a valid sequence, plus the rest of the elements must be a valid sequence.
 
 
+## 31. Next Permutation
+### Approach 1: Brute Force
+Time: O(N!) Space: O(N)
+
+### Approach 2: Single Pass Approach
+Time: O(N) Space: O(1)
+
+Runtime: **8 ms**, faster than 92.77% of C++ online submissions for Next Permutation.
+
+Memory Usage: **8.5 MB**, less than 89.81% of C++ online submissions for Next Permutation.
+
+Cases
+
++ `x x x 2 3` => `x x x 3 2`
++  `x x x a b c1 c2 ...`, where b > a and b > c1 > c2 > ... => `x x x c_i ... c_{i-1} a ... c2 c1 b` (find i that satisfies c_i > a and c_{i+1} <= a); 
++ `4 3 2 1` => `1 2 3 4`
+
+
 
 ## 32. Longest Valid Parentheses
 ### Approach 1: Expand from the center to both sides
