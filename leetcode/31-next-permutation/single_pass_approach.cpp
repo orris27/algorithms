@@ -36,20 +36,13 @@ typedef long long LL;
 
 class Solution {
 public:
-    void swap(vector<int>& nums, int x, int y)
-    {
-        int tmp = nums[x];
-        nums[x] = nums[y];
-        nums[y] = tmp;
-    }
-
     void nextPermutation(vector<int>& nums) {
         if (nums.size() <= 1)
             return;
         int size = nums.size();
         if (nums[size-1] > nums[size-2])
         {
-            swap(nums, size-1, size-2);
+            swap(nums[size-1], nums[size-2]);
             return;
         }
 
@@ -67,7 +60,7 @@ public:
 
         if (most == -1) // reverse the vector
             for (int i = 0, j = size-1;i < j;++i, --j)
-                swap(nums, i, j);
+                swap(nums[i], nums[j]);
         else 
         {
             for (int i = most - 1;i<size -1;++i) // find the minimum element larger than nums[most-1]
@@ -77,10 +70,10 @@ public:
                     elm = nums[i];
                     break;
                 }
-            
-            swap(nums, most - 1, index);
+           
+            swap(nums[most - 1], nums[index]);
             for (int i = most, j =size-1;i< j;++i, --j)
-                swap(nums, i, j);
+                swap(nums[i], nums[j]);
         }
     }
 };
@@ -101,6 +94,12 @@ void test(Solution so, vector<int>& nums)
 
 int main()
 {
+    int a = 2, b = 3;
+    cout << a << " " << b << endl;
+    swap(a, b);
+    cout << a << " " << b << endl;
+    return 0;
+
     Solution so;
     vector<int> nums{1, 2, 3};
 
