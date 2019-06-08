@@ -153,7 +153,7 @@ Memory Usage: **8.5 MB**, less than 89.81% of C++ online submissions for Next Pe
 Cases
 
 + `x x x 2 3` => `x x x 3 2`
-+  `x x x a b c1 c2 ...`, where b > a and b > c1 > c2 > ... => `x x x c_i ... c_{i-1} a ... c2 c1 b` (find i that satisfies c_i > a and c_{i+1} <= a); 
++  `x x x a b c1 c2 ...`, where b > a and b > c1 > c2 > ... => `x x x c_i ... c_{i-1} a ... c2 c1 b` (find i that satisfies c\_i > a and c\_{i+1} <= a); 
 + `4 3 2 1` => `1 2 3 4`
 
 
@@ -217,3 +217,19 @@ Memory Usage: **9.3 MB**, less than 89.47% of C++ online submissions for Longest
 
 + i-th element of `dp` represents the length of longest valid parentheses ending at s[i]
 + `dp[i]` depends on `dp[i - 1]`, `dp[i - 2]` and `dp[i - dp[i-2] - 2]`.
+
+
+
+## 46. Permutations
+
+### Approach 1: Brute Force
+
+
+
+### Approach 2: Backtracking
+
+Runtime: **12 ms**, faster than 90.37% of C++ online submissions forPermutations.
+
+Memory Usage: **9.6 MB**, less than 35.43% of C++ online submissions forPermutations.
+
++ select next element by swapping
