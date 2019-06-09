@@ -220,6 +220,20 @@ Memory Usage: **9.3 MB**, less than 89.47% of C++ online submissions for Longest
 
 
 
+
+## 33. Search in Rotated Array
+### Approach 1: Binary Search
+Time: O(logN)
+
+Runtime: **4 ms**, faster than 93.93% of C++ online submissions for Search in Rotated Sorted Array.
+
+Memory Usage: **8.7 MB**, less than 83.60% of C++ online submissions for Search in Rotated Sorted Array.
+
++ Find the first element that is just smaller than the first element. Take care of the case that the array is not rotated, such as `[1, 3]`
++ Apply binary search while computing the modulo
+
+
+
 ## 46. Permutations
 
 ### Approach 1: Brute Force
