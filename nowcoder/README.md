@@ -24,4 +24,12 @@
 
 + One stack is used for pushing, while another one is used for poping
 
+## 跳台阶
+### Approach 1: Dynamic Programming
+运行时间：**4ms**
+
+占用内存：**972k**
+
++ dp[0] = dp[1] = 1; dp[n] = dp[n - 1] + dp[n - 2];
+
 
