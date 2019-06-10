@@ -33,3 +33,13 @@
 + dp[0] = dp[1] = 1; dp[n] = dp[n - 1] + dp[n - 2];
 
 
+## 字符流中的第一个不重复的字符
+### Approach 1: Queue with counting
+运行时间：**3ms**
+
+占用内存：**620k**
+
++ Recording the sequence order using queue
++ Store the times of occurs for every character using array
+
+
