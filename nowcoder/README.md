@@ -16,3 +16,12 @@
 
 + Calculate number of spaces by iterating through the array forwards. Replace spaces starting from the last element to reduce the times of moving elements which is time-consuming.
 
+## 用两个栈实现队列
+### Approach 1: one stack one usage
+运行时间：**4ms**
+
+占用内存：**472k**
+
++ One stack is used for pushing, while another one is used for poping
+
+
