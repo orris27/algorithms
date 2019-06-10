@@ -233,12 +233,23 @@ Memory Usage: **8.7 MB**, less than 83.60% of C++ online submissions for Search 
 + Apply binary search while computing the modulo
 
 
+## 34. Find First and Last Position of Elements in Sorted Array
+### Approach 1: Brute Force
+Time: O(N) Space: O(1)
+
+### Approach 2: Binary Search
+Time: O(logN) Space: O(1)
+
+Runtime: **8 ms**, faster than 94.92% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+
+Memory Usage: **10.6 MB**, less than 42.10% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+
++ a modified binary search
+
 
 ## 46. Permutations
 
 ### Approach 1: Brute Force
-
-
 
 ### Approach 2: Backtracking
 
@@ -247,3 +258,6 @@ Runtime: **12 ms**, faster than 90.37% of C++ online submissions forPermutations
 Memory Usage: **9.6 MB**, less than 35.43% of C++ online submissions forPermutations.
 
 + select next element by swapping
+
+
+
