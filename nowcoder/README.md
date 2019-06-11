@@ -43,3 +43,17 @@
 + Store the times of occurs for every character using array
 
 
+## 构建乘积数组
+### Approach 1: matrix approach
+运行时间：**4ms**
+
+占用内存：**468k**
+
+| res[0] |      | A[1] | A[2] | A[3] | A[4] |
+| ------ | ---- | ---- | ---- | ---- | ---- |
+| res[1] | A[0] |      | A[2] | A[3] | A[4] |
+| res[2] | A[0] | A[1] |      | A[3] | A[4] |
+| res[3] | A[0] | A[1] | A[2] |      | A[4] |
+| res[4] | A[0] | A[1] | A[2] | A[3] |      |
+
+
