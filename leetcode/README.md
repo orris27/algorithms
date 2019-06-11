@@ -246,7 +246,20 @@ Memory Usage: **10.6 MB**, less than 42.10% of C++ online submissions for Find F
 
 + a modified binary search
 
+## 39. Combination Sum
+### Approach 1: Backtracking
+Runtime: **116 ms**, faster than 7.98% of C++ online submissions for Combination Sum.
 
+Memory Usage: **45.1 MB**, less than 6.39% of C++ online submissions for Combination Sum.
+
++ Compute the possible numbers of current elements which determine how many can we add it to our list. Then we go to the next element and do the same thing
+
+### Approach 2: Backtracking with Pruning
+Runtime: **40 ms**, faster than 25.82% of C++ online submissions for Combination Sum.
+
+Memory Usage: **19.5 MB**, less than 17.09% of C++ online submissions for Combination Sum.
+
++ Sort the candidates and do not search if current element is larger than target.
 ## 46. Permutations
 
 ### Approach 1: Brute Force
