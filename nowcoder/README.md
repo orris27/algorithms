@@ -57,3 +57,28 @@
 | res[4] | A[0] | A[1] | A[2] | A[3] |      |
 
 
+## 和为S的两个数字
+### Approach 1: Two Pointer Approach
+运行时间：**5ms**
+
+占用内存：**376k**
+
++ Move pointers inward from both sides. Similar as "Container with Most Water" problem.
+
+
+## 数组中重复的数字
+### Approach 1: Swap elements
+运行时间：**3ms**
+
+占用内存：**376k**
+
++ Traverse array forwards while swapping elements to make them at proper position. If both elements are at correct positions, then move on to the next element. If both contents are equal, then they are the first duplicate element.
+
+### Approach 2: Mark elements
+运行时间：**3ms**
+
+占用内存：**476k**
+
++ Elements are between 0 and n-1
++ If the element is larger than n, meaning that it has been visited
+
