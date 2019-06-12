@@ -260,6 +260,16 @@ Runtime: **40 ms**, faster than 25.82% of C++ online submissions for Combination
 Memory Usage: **19.5 MB**, less than 17.09% of C++ online submissions for Combination Sum.
 
 + Sort the candidates and do not search if current element is larger than target.
+
+## 40. Combination Sum2
+### Approach 1: Backtracking with Pruning
+Runtime: **16 ms**, faster than 42.37% of C++ online submissions for Combination Sum II.
+
+Memory Usage: **11.1 MB**, less than 31.35% of C++ online submissions for Combination Sum II.
+
++ Transform combination sum2 problem to combination sum.
+
+
 ## 46. Permutations
 
 ### Approach 1: Brute Force
