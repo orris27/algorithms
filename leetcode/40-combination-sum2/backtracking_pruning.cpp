@@ -50,12 +50,6 @@ public:
             res.push_back(tmp_list);
         if (index >= candidates.size() || target < candidates[index])
             return;
-            
-//        cout << "---------------------" << endl;
-//        debug("index=%d || target=%d\n", index, target);
-//        print_v(tmp_list);
-//        print_v(candidates);
-//        cout << "---------------------" << endl;
 
         // calculate numbers of same elements
         int nums = 0;
@@ -67,22 +61,12 @@ public:
                 tmp_list.push_back(candidates[index]);
             combinationSum2(candidates, target - candidates[index] * i, res, index + nums, tmp_list);
         }
-
-//        combinationSum2(candidates, target, res, index+1, tmp_list);
-//        // choose current element
-//        if(target > candidates[index])
-//        {
-//            tmp_list.push_back(candidates[index]);
-//            combinationSum2(candidates, target - candidates[index], res, index+1, tmp_list);
-//        }
-//        // not choose current element
     }
 
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-//        cout << "hello world" << endl;
         vector<vector<int>> res;
         vector<int> tmp_list;
-        sort(candidates.begin(), candidates.end()); // sort in ascending order
+        sort(candidates.begin(), candidates.end()); // sort in ascending order, to perform pruning
         combinationSum2(candidates, target, res, 0, tmp_list);
         return res;
     }
