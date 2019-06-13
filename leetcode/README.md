@@ -270,6 +270,18 @@ Memory Usage: **11.1 MB**, less than 31.35% of C++ online submissions for Combin
 + Transform combination sum2 problem to combination sum.
 
 
+
+## 41. First Missing Positive
+### Approach 1: Counting Sort Approach
+Runtime: **4 ms**, faster than 87.32% of C++ online submissions for First Missing Positive.
+
+Memory Usage: **8.8 MB**, less than 50.06% of C++ online submissions for First Missing Positive.
+
++ The first missing positive must be between 1 to N (inclusive)
++ Put the each element in its right place. In this case, keep the rule of `a[i-1] = i`.
+
+
+
 ## 46. Permutations
 
 ### Approach 1: Brute Force
