@@ -295,4 +295,13 @@ Memory Usage: **9.6 MB**, less than 35.43% of C++ online submissions forPermutat
 + select next element by swapping
 
 
+## 51. N-Queens
+### Approach 1: Backtracking with Prunning
+Runtime: **4 ms**, faster than 99.14% of C++ online submissions for N-Queens.
+
+Memory Usage: **11.7 MB**, less than 28.92% of C++ online submissions for N-Queens.
+
++ Use int array to represent the positio of queen in a specfic row
++ Select the next position if and only if it is not in the same row, column or diagonal as previous points
+
 
