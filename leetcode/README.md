@@ -304,4 +304,10 @@ Memory Usage: **11.7 MB**, less than 28.92% of C++ online submissions for N-Quee
 + Use int array to represent the positio of queen in a specfic row
 + Select the next position if and only if it is not in the same row, column or diagonal as previous points
 
+## 54. Spiral Matrix
+### Simulation
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Spiral Matrix.
 
+Memory Usage: **8.5 MB**, less than 84.41% of C++ online submissions for Spiral Matrix.
+
++ Set the directions to move x and y accordingly
