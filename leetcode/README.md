@@ -305,9 +305,39 @@ Memory Usage: **11.7 MB**, less than 28.92% of C++ online submissions for N-Quee
 + Select the next position if and only if it is not in the same row, column or diagonal as previous points
 
 ## 54. Spiral Matrix
-### Simulation
+### Approach 1: Simulation
 Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Spiral Matrix.
 
 Memory Usage: **8.5 MB**, less than 84.41% of C++ online submissions for Spiral Matrix.
 
 + Set the directions to move x and y accordingly
+
+## 55. Jump Game
+We call a position in an array a "good index" if starting from this position, we can reach the last index. Otherwise, the position is called a "bad index".
+### Approach 1: Brute Force
+Time Limit Exceeded
+
++ Find the good index at current stage and update other indices if they can reach the good index. Stop the loop if there is no more new good index
+
+### Approach 2: Backtracking
+Time Limit Exceeded
+
++ We start from the first position and jump to every index that is reachable. Repeat this process until we reach the last index. When stuck, backtrack.
++ We only jumps to the positions on the right side, since starting from the first index ensures that the leftmost position is covered
+
+### Approach 3: Backtracking + Dynamic Programming
+Time: O(N^2) Space: O(N) = Recursion cost + memorization table
+
++ Build a memorizatio table that records whether a specific position can reach the last index
++ Good, Unknown, Bad
+
+
+### Approach 4: Greedy
+Time: O(N); Space: O(1)
+
+Runtime: **16 ms**, faster than 33.57% of C++ online submissions for Jump Game.
+
+Memory Usage: **9.9 MB**, less than 54.82% of C++ online submissions for Jump Game.
+
++ Traverse the array from right to the left
++ Update the maximum reach and stop if we cannot move further
