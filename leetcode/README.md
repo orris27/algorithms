@@ -312,6 +312,16 @@ Memory Usage: **8.5 MB**, less than 84.41% of C++ online submissions for Spiral 
 
 + Set the directions to move x and y accordingly
 
+
+### Approach 2: Layer-by-Layer
+Time: O(N); Space: O(N)
+
+Runtime: **4 ms**, faster than 83.70% of C++ online submissions for Spiral Matrix.
+
+Memory Usage: **8.7 MB**, less than 32.14% of C++ online submissions for Spiral Matrix.
+
++ traverse through all the elements for each layer from the outermost layer to the innermost layer
+
 ## 55. Jump Game
 We call a position in an array a "good index" if starting from this position, we can reach the last index. Otherwise, the position is called a "bad index".
 ### Approach 1: Brute Force
@@ -341,3 +351,5 @@ Memory Usage: **9.9 MB**, less than 54.82% of C++ online submissions for Jump Ga
 
 + Traverse the array from right to the left
 + Update the maximum reach and stop if we cannot move further
+
+
