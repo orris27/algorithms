@@ -353,3 +353,25 @@ Memory Usage: **9.9 MB**, less than 54.82% of C++ online submissions for Jump Ga
 + Update the maximum reach and stop if we cannot move further
 
 
+
+## 56. Merge Intervals
+
+### Approach 1: Sorting
+Time: O(NlogN); Space: O(1)
+
+Runtime: **16 ms**, faster than 80.08% of C++ online submissions for Merge Intervals.
+
+Memory Usage: **12.5 MB**, less than 16.76% of C++ online submissions for Merge Intervals.
+
++ Sort the intervals based on the the left element. Merge the adjacent intervals if the `a[i-1][1]` > `a[i][0]`
+
+
+### Approach 2: Connected Components
+Time: O(N^2); Space: 
+
+Time Limit Exceeded
+
+
++ Build a undirected graph that connects every overlapping intervals
++ DFS for the graph and merge the intervals 
+
