@@ -375,3 +375,25 @@ Time Limit Exceeded
 + Build a undirected graph that connects every overlapping intervals
 + DFS for the graph and merge the intervals 
 
+
+## 62. Unique Paths
+### Approach 1: DFS
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Unique Paths.
+
+Memory Usage: **8.7 MB**, less than 29.44% of C++ online submissions for Unique Paths.
+
++ dfs
++ memorization table for the number of unique paths of that position
+
+
+## 63. Unique Paths2
+### Approach 1: DFS +DP
+
+Time: O(M\*N); Space: O(1)
+
+
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Unique Paths II.
+
+Memory Usage: **9.4 MB**, less than 19.76% of C++ online submissions for Unique Paths II.
+
++ Add constrains based on Unique Paths
