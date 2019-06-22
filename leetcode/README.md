@@ -397,3 +397,15 @@ Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Unique Path
 Memory Usage: **9.4 MB**, less than 19.76% of C++ online submissions for Unique Paths II.
 
 + Add constrains based on Unique Paths
+
+
+## 64. Minimum Path Sum
+### Approach 1: Dyanmic Programming
+Time: O(M\*N); Space: O(M\*N)
+
+Runtime: **8 ms**, faster than 94.66% of C++ online submissions for Minimum Path Sum.
+
+Memory Usage: **10.8 MB**, less than 47.14% of C++ online submissions for Minimum Path Sum.
+
++ Note that `INT8_MAX` equals to 127, and thus use `INT_MAX` instead
+
