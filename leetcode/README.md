@@ -409,3 +409,32 @@ Memory Usage: **10.8 MB**, less than 47.14% of C++ online submissions for Minimu
 
 + Note that `INT8_MAX` equals to 127, and thus use `INT_MAX` instead
 
+
+## 73. Set Matrix Zeroes
+### Approach 1: Additional Memory Approach
+Time: O(M\*N); Space: O(M + N)
+
+Runtime: **44 ms**, faster than 96.07% of C++ online submissions for Set Matrix Zeroes.
+
+Memory Usage: **11.5 MB**, less than 41.89% of C++ online submissions for Set Matrix Zeroes.
+
+
++ Record the row and column that needs to be changed
+
+### Approach 2: Dummy Value
+Time: O(M\*N\* (M+ N)); Space: O(1)
+
+Runtime: **44 ms**, faster than 96.07% of C++ online submissions for Set Matrix Zeroes.
+
+Memory Usage: **11.4 MB**, less than 83.83% of C++ online submissions for Set Matrix Zeroes.
+
++ Set the element to a dummy value which is chosen dependend on the constrains of the problem and keep the zero elemenet zero because we need to use them to find rows and columns needing altered 
+
+### Approach 3: Flag
+Time: O(M\* N); Space: O(1)
+
+Runtime: **44 ms**, faster than 96.07% of C++ online submissions for Set Matrix Zeroes.
+
+Memory Usage: **11.4 MB**, less than 76.65% of C++ online submissions for Set Matrix Zeroes.
+
++ Instead of recording rows and columns using additional memory structure, use the first element in the specific row or column as the flag to indicate whether this row or column should be reset.
