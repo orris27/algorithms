@@ -295,6 +295,24 @@ Memory Usage: **9.6 MB**, less than 35.43% of C++ online submissions forPermutat
 + select next element by swapping
 
 
+## 48. Rotate Image
+### Approach 1: Const Space
+Runtime: 4 ms, faster than 91.76% of C++ online submissions for Rotate Image.
+
+Memory Usage: 9 MB, less than 61.34% of C++ online submissions for Rotate Image.
+
++ Record four elements and assign corresponding values to them.
+### Approach 2: Magic Approach
+Time: O(N^2)
+
+Runtime: 4 ms, faster than 91.76% of C++ online submissions for Rotate Image.
+
+Memory Usage: 8.9 MB, less than 93.69% of C++ online submissions for Rotate Image.
+
++ Clockwise: reverse top to down, and then swap the symmetry
++ anti-clockwise: swap the symmetry, and then reverse top to down
+
+
 ## 51. N-Queens
 ### Approach 1: Backtracking with Prunning
 Runtime: **4 ms**, faster than 99.14% of C++ online submissions for N-Queens.
@@ -438,3 +456,6 @@ Runtime: **44 ms**, faster than 96.07% of C++ online submissions for Set Matrix 
 Memory Usage: **11.4 MB**, less than 76.65% of C++ online submissions for Set Matrix Zeroes.
 
 + Instead of recording rows and columns using additional memory structure, use the first element in the specific row or column as the flag to indicate whether this row or column should be reset.
+
+
+
