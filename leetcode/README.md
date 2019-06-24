@@ -297,20 +297,27 @@ Memory Usage: **9.6 MB**, less than 35.43% of C++ online submissions forPermutat
 
 ## 48. Rotate Image
 ### Approach 1: Const Space
-Runtime: 4 ms, faster than 91.76% of C++ online submissions for Rotate Image.
+Runtime: **4 ms**, faster than 91.76% of C++ online submissions for Rotate Image.
 
-Memory Usage: 9 MB, less than 61.34% of C++ online submissions for Rotate Image.
+Memory Usage: **9 MB**, less than 61.34% of C++ online submissions for Rotate Image.
 
 + Record four elements and assign corresponding values to them.
 ### Approach 2: Magic Approach
 Time: O(N^2)
 
-Runtime: 4 ms, faster than 91.76% of C++ online submissions for Rotate Image.
+Runtime: **4 ms**, faster than 91.76% of C++ online submissions for Rotate Image.
 
-Memory Usage: 8.9 MB, less than 93.69% of C++ online submissions for Rotate Image.
+Memory Usage: **8.9 MB**, less than 93.69% of C++ online submissions for Rotate Image.
 
 + Clockwise: reverse top to down, and then swap the symmetry
 + anti-clockwise: swap the symmetry, and then reverse top to down
+
+### Approach 3: Swap: Simplified version of approach 1
+Runtime: **4 ms**, faster than 91.76% of C++ online submissions for Rotate Image.
+
+Memory Usage: **8.8 MB**, less than 99.81% of C++ online submissions for Rotate Image.
+
++ [Rotate an n x n matrix](https://www.youtube.com/watch?v=Jtu6dJ0Cb94)
 
 
 ## 51. N-Queens
