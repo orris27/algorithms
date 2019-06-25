@@ -466,3 +466,12 @@ Memory Usage: **11.4 MB**, less than 76.65% of C++ online submissions for Set Ma
 
 
 
+## 75. Sort Colors
+### Approach 1: Two pointer
+Time: O(N); Space: O(1)
+
+Runtime: **4 ms**, faster than 84.91% of C++ online submissions for Sort Colors.
+
+Memory Usage: **8.5 MB**, less than 66.76% of C++ online submissions for Sort Colors.
+
++ Move two points inside and keep `k` in the range of `[i, j]`
