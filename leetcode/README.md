@@ -475,3 +475,23 @@ Runtime: **4 ms**, faster than 84.91% of C++ online submissions for Sort Colors.
 Memory Usage: **8.5 MB**, less than 66.76% of C++ online submissions for Sort Colors.
 
 + Move two points inside and keep `k` in the range of `[i, j]`
+
+## 77. Combinations
+### Approach 1: Backtracking
+
+Runtime: **76 ms**, faster than 77.13% of C++ online submissions for Combinations.
+
+Memory Usage: **17.3 MB**, less than 29.10% of C++ online submissions for Combinations.
+
++ Create a memorization vector that records the current elements. 
++ Do not swap the list, since we are not going to reuse the same element.
+
+### Approach 2: Iteration
+Runtime: **68 ms**, faster than 85.15% of C++ online submissions for Combinations.
+
+Memory Usage: **11.5 MB**, less than 96.75% of C++ online submissions for Combinations.
+
++ Work on current positions, and move on if necessary.
++ start -> `[1]` -> `[1, 1]` -> `[1, 2]`(ok) -> ... -> `[1, 4]`(ok) -> `[1, 5]`(5>4, --i) -> `[2]` -> `[2, 2]` -> `[2, 3]`(ok) -> ... -> `[2, 4]`(ok) -> `[2, 5]`(5>4, --i) -> `[3]` -> `[3, 3]` -> `[3, 4]`(ok) -> `[3, 5]`(5>4, --i) -> `[4]` -> `[4, 5]`(5>4, --i) -> `[5]`(5>4, --i) -> `[]` -> end
+
+
