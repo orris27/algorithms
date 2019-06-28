@@ -495,3 +495,44 @@ Memory Usage: **11.5 MB**, less than 96.75% of C++ online submissions for Combin
 + start -> `[1]` -> `[1, 1]` -> `[1, 2]`(ok) -> ... -> `[1, 4]`(ok) -> `[1, 5]`(5>4, --i) -> `[2]` -> `[2, 2]` -> `[2, 3]`(ok) -> ... -> `[2, 4]`(ok) -> `[2, 5]`(5>4, --i) -> `[3]` -> `[3, 3]` -> `[3, 4]`(ok) -> `[3, 5]`(5>4, --i) -> `[4]` -> `[4, 5]`(5>4, --i) -> `[5]`(5>4, --i) -> `[]` -> end
 
 
+## 78. Subsets
+
+### Approach 1: Backtracking with Pruning
+Runtime: **4 ms**, faster than 98.92% of C++ online submissions for Subsets.
+
+Memory Usage: **17.7 MB**, less than 5.68% of C++ online submissions for Subsets.
+
++ **specify the size of subset**
++ Add the current element or not (2 possible cases)
++ Pruning cases: the remaining numbers are not enough to form a subset of size k
+
+### Approach 2: General Backtracking
+Runtime: **8 ms**, faster than 78.49% of C++ online submissions for Subsets.
+
+Memory Usage: **9 MB**, less than 84.32% of C++ online submissions for Subsets.
+
++ Finding all subsets with size k is inefficient. Directly try all the possible cases with one single subset variable.
++ push + pop
+
+
+### Approach 3: Iteration
+Runtime: **8 ms**, faster than 78.49% of C++ online submissions for Subsets.
+
+Memory Usage: **9.1 MB**, less than 58.71% of C++ online submissions for Subsets.
+
+Using [1, 2, 3] as an example, the iterative process is like:
+
+1. Initially, one empty subset [[]]
+2. Adding 1 to []: [[], [1]];
+3. Adding 2 to [] and [1]: [[], [1], [2], [1, 2]];
+4. Adding 3 to [], [1], [2] and [1, 2]: [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]].
+
+### Approach 4: Bit Manupulation
+Time: O(N \* 2^N)
+
+Runtime: **4 ms**, faster than 98.92% of C++ online submissions for Subsets.
+
+Memory Usage: **8.8 MB**, less than 99.48% of C++ online submissions for Subsets.
+
++ For `res[i]`, if i is 13=01101, then `res[i]` contains `nums[0]`, `nums[2]` and `nums[3]`
+
