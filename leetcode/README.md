@@ -536,3 +536,27 @@ Memory Usage: **8.8 MB**, less than 99.48% of C++ online submissions for Subsets
 
 + For `res[i]`, if i is 13=01101, then `res[i]` contains `nums[0]`, `nums[2]` and `nums[3]`
 
+## 79. Word Search
+### Approach 1: DFS
+Runtime: **376 ms**, faster than 8.48% of C++ online submissions for Word Search.
+
+Memory Usage: **57.6 MB**, less than 36.68% of C++ online submissions for Word Search.
+
++ Find whether a path which follows a specific rule on the map exists or not
++ Reset the `path` table if current point cannot form the final path
+
+### Approach 2: DFS using Set
+Runtime: **212 ms**, faster than 37.13% of C++ online submissions for Word Search.
+
+Memory Usage: **91.3 MB**, less than 33.61% of C++ online submissions for Word Search.
+
++ Use set to store the `path` table
+
+### Approach 3: Optimized DFS
+Runtime: **24 ms**, faster than 90.21% of C++ online submissions for Word Search.
+
+Memory Usage: **10 MB**, less than 88.38% of C++ online submissions for Word Search.
+
++ No need for extra memorization table for `path`, since we can change the content in the original map. Note that we do not need to restore the altered map because the LeetCode does not check our code with the old board.
++ **Use char pointer rather than string in the function argument to save both the time and space**
+
