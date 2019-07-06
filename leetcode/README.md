@@ -560,3 +560,25 @@ Memory Usage: **10 MB**, less than 88.38% of C++ online submissions for Word Sea
 + No need for extra memorization table for `path`, since we can change the content in the original map. Note that we do not need to restore the altered map because the LeetCode does not check our code with the old board.
 + **Use char pointer rather than string in the function argument to save both the time and space**
 
+
+## 338. Counting Bits
+
+### Approach 1: Optimized Naive Approach
+Time: O(N\*sizeof(integer))
+
+Runtime: **72 ms**, faster than 6.03% of C++ online submissions for Counting Bits.
+
+Memory Usage: **10 MB**, less than 30.66% of C++ online submissions for Counting Bits.
+
++ If the previous element is mean, then choose that count plus 1
+
+### Approach 2: Dynamic Programming
+Time: O(N); Space: O(N)
+
+Runtime: **52 ms**, faster than 94.39% of C++ online submissions for Counting Bits.
+
+Memory Usage: **9.6 MB**, less than 52.89% of C++ online submissions for Counting Bits.
+
++ `i&(i-1)` drops the lowest set bit
+
++ `dp[i] = dp[i&(i-1)] +1`
