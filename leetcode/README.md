@@ -320,6 +320,15 @@ Memory Usage: **8.8 MB**, less than 99.81% of C++ online submissions for Rotate 
 + [Rotate an n x n matrix](https://www.youtube.com/watch?v=Jtu6dJ0Cb94)
 
 
+## 49. Group Anagrams
+### Approach 1: Hash
+Runtime: **48 ms**, faster than 53.83% of C++ online submissions for Group Anagrams.
+
+Memory Usage: **17.5 MB**, less than 92.70% of C++ online submissions for Group Anagrams.
+
++ Hash based on the sorted string
+
+
 ## 51. N-Queens
 ### Approach 1: Backtracking with Prunning
 Runtime: **4 ms**, faster than 99.14% of C++ online submissions for N-Queens.
