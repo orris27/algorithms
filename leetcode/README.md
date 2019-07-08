@@ -321,13 +321,27 @@ Memory Usage: **8.8 MB**, less than 99.81% of C++ online submissions for Rotate 
 
 
 ## 49. Group Anagrams
-### Approach 1: Hash
+### Approach 1: Hash by Sorted Words
+Time: O(N K logK), where `N` is the length of `strs` and `K` is the maximum length of a string in `strs`; Space: O(N K)
+
 Runtime: **48 ms**, faster than 53.83% of C++ online submissions for Group Anagrams.
 
 Memory Usage: **17.5 MB**, less than 92.70% of C++ online submissions for Group Anagrams.
 
 + Hash based on the sorted string
 
+### Approach 2: Hash by Character Frequency
+Time: O(N K); Space: O(N K). 
+
+NOTICE: In the solution given by LeetCode, they use array with size of 26 to store the frequency
+
+
+Runtime: **132 ms**, faster than 10.43% of C++ online submissions for Group Anagrams.
+
+Memory Usage: **34.2 MB**, less than 5.05% of C++ online submissions for Group Anagrams.
+
++ Two words are anagrams if and only if their character frequency are the same
++ `map` in C++ is allowed to be hashed
 
 ## 51. N-Queens
 ### Approach 1: Backtracking with Prunning
