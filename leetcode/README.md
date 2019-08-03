@@ -458,6 +458,12 @@ Memory Usage: **10.8 MB**, less than 47.14% of C++ online submissions for Minimu
 + Note that `INT8_MAX` equals to 127, and thus use `INT_MAX` instead
 
 
+## 67. Add Binary
+### Approach 1: Carry
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Add Binary.
+Memory Usage: **8.7 MB**, less than 68.65% of C++ online submissions for Add Binary.
+
+
 ## 73. Set Matrix Zeroes
 ### Approach 1: Additional Memory Approach
 Time: O(M\*N); Space: O(M + N)
