@@ -589,6 +589,15 @@ Memory Usage: **10 MB**, less than 88.38% of C++ online submissions for Word Sea
 + No need for extra memorization table for `path`, since we can change the content in the original map. Note that we do not need to restore the altered map because the LeetCode does not check our code with the old board.
 + **Use char pointer rather than string in the function argument to save both the time and space**
 
+## 121. Best Time to Buy and Sell Stock
+### Approach 1: One Pass
+Time: O(N); Space: O(1)
+Runtime: **8 ms**, faster than 70.12% of C++ online submissions for Best Time to Buy and Sell Stock.
+
+Memory Usage: **9.4 MB**, less than 99.09% of C++ online submissions for Best Time to Buy and Sell Stock.
+
++ Iterate the array and update the income by the means of subtracting the previous minimum price from the current price
+
 
 ## 338. Counting Bits
 
