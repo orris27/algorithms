@@ -113,6 +113,19 @@ Memory Usage: **9.9 MB**, less than 55.66% of C++ online submissions for Contain
 
 
 
+## 14. Longest Common Prefix
+### Approach 1: Vertical Scanning
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Longest Common Prefix.
+Memory Usage: **8.9 MB**, less than 59.68% of C++ online submissions for Longest Common Prefix.
+
++ Check all the characters for a specific index from 0 till the length of the shortest string
+
+### Approach 2: Sort
+
++ Sort the strings, and examine the first string and the last string
+
+
+
 ## 22. Generate Parantheses
 ### Approach 1: Brute Force
 Time: O(N * 2^(2N)) Space: O(N * 2^(2N))
@@ -463,6 +476,11 @@ Memory Usage: **10.8 MB**, less than 47.14% of C++ online submissions for Minimu
 Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Add Binary.
 Memory Usage: **8.7 MB**, less than 68.65% of C++ online submissions for Add Binary.
 
+## 70. Climbing Stairs
+Runtime: **0 ms**, faster than 100.00% of C++ online submissions for Climbing Stairs.
+Memory Usage: **8.2 MB**, less than 98.53% of C++ online submissions for Climbing Stairs.
+
++ `dp[n] = dp[n-1] + dp[n-2]`
 
 ## 73. Set Matrix Zeroes
 ### Approach 1: Additional Memory Approach
@@ -620,3 +638,19 @@ Memory Usage: **9.6 MB**, less than 52.89% of C++ online submissions for Countin
 + `i&(i-1)` drops the lowest set bit
 
 + `dp[i] = dp[i&(i-1)] +1`
+
+## 542. 01 Matrix
+### Approach 1: BFS
+
+Runtime: **192 ms**, faster than 61.93% of C++ online submissions for 01 Matrix.
+
+Memory Usage: **24.7 MB**, less than 66.67% of C++ online submissions for 01 Matrix.
+
+
++ 1. Start by adding all the cells with 0s to a queue
+
++ 2. Initially, distance for each 0 cell is 0, and distance for each 1 cell is INT_MAX, which is updated during the BFS
+
++ 3. Pop the cell from the queue, and examine its neighbors. If the new calculated distance for this neighbor is smaller, update `dist` and add the neighbor to the queue.
+
++ Since we always update neighbors with best calculated distance, the new distance is accurate.
